@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function Home({ user }) {
   return (
     <div className="container text-center mt-5">
-      <h1 className="mb-4 home-heading">Welcome to Cooking Notes</h1>
+      <h1 className="mb-4 home-heading">Welcome to CooBook🍳</h1>
 
       <p className="mb-5 home-subtext">
         Save, organize, and cook your favorite recipes with step timers.
