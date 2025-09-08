@@ -1,4 +1,3 @@
-// src/App.jsx
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -11,6 +10,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import RecipeDetails from "./pages/recipeDetails";
 import EditRecipe from "./pages/EditRecipe";
+import Footer from "./components/Footer";
 
 // ---------------- Assets & Styles ----------------
 import homebg from "./assets/homebg.jpg";
@@ -40,36 +40,23 @@ function App() {
           minHeight: "100vh",
         }}
       >
-        {/* overlay for dark tint or styling */}
-        <div className="overlay">
-          {/* Navbar with login state */}
+        <div className="overlay d-flex flex-column min-vh-100">
+          
           <Navbar user={user} setUser={setUser} />
 
-          {/* main content container */}
-          <div className="container py-4">
+          
+          <div className="container py-4 flex-grow-1">
             <Routes>
-              {/* Home page */}
               <Route path="/" element={<Home user={user} />} />
-
-              {/* Recipe list */}
               <Route path="/recipes" element={<RecipeList user={user} />} />
-
-              {/* Recipe details */}
               <Route path="/recipes/:id" element={<RecipeDetails user={user} />} />
-
-              {/* Add new recipe */}
               <Route path="/add" element={<AddRecipe user={user} />} />
-
-              {/* Edit existing recipe */}
               <Route path="/edit/:id" element={<EditRecipe user={user} />} />
-
-              {/* Login page */}
               <Route path="/login" element={<Login setUser={setUser} />} />
-
-              {/* Register page */}
               <Route path="/register" element={<Register />} />
             </Routes>
           </div>
+          <Footer />
         </div>
       </div>
     </Router>
