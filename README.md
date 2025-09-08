@@ -1,12 +1,65 @@
-# React + Vite
+# 🍴 CookBook - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the **frontend** for the CookBook application, built with **React**, **React Router**, and **Bootstrap 5**. Users can browse, add, edit, and cook recipes with step timers.
 
-Currently, two official plugins are available:
+ ### Preview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![CookBook Frontend Screenshot](./src/assets/image.png)
 
-## Expanding the ESLint configuration
+## 🌐 Live Demo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+[Frontend deployed on Vercel](https://cookbook-frontend-oi5f.vercel.app)
+
+##  Features
+
+- User authentication (Login/Register)
+- View, add, and edit recipes
+- Step-based cooking timers
+- Responsive design with Bootstrap
+- Dark-themed interface
+- Persistent login with localStorage
+
+## 🛠️ Tech Stack
+
+- React.js (v18+)
+- React Router v6
+- Bootstrap 5
+- CSS
+- Vite (frontend bundler)
+
+## 💻 Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/cookbook-frontend.git
+cd cookbook-frontend
+Install dependencies:
+
+bash
+npm install
+Create a .env file in the root with:
+
+env
+VITE_API_BASE_URL=https://your-backend-url.com
+Run the app locally:
+
+bash
+npm run dev
+Open your browser at http://localhost:5173.
+```
+```
+##📂 Folder Structure
+src/
+ ├─ components/    # Navbar, Footer, reusable UI components
+ ├─ pages/         # Home, Login, Register, Recipe pages
+ ├─ assets/        # Images, background
+ ├─ App.jsx
+ └─ main.jsx
+```
+🔧 Scripts
+npm run dev — run the app in development mode
+
+npm run build — build for production
+
+npm run preview — preview the production build
