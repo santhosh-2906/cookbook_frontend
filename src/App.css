@@ -1,0 +1,52 @@
+
+
+/* global background */
+.app-background {
+  background: url("./assets/homebg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+}
+
+
+/* dark overlay for readability */
+.overlay {
+  background: rgba(0, 0, 0, 0.55);
+  min-height: 100vh;
+  color: #fff; /* default white text */
+}
+
+.home-heading {
+  font-size: 3rem;     
+  font-weight: 700;        
+  color: #ffffff;          
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); 
+}
+
+/* Home page description */
+.home-subtext {
+  font-size: 1.3rem;       
+  font-weight: 400;        
+  color: #f1f1f1;          
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* hover shadow for cards */
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+/* hover effect for buttons */
+.btn {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
