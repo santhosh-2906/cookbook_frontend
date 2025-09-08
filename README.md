@@ -34,17 +34,14 @@ This is the **frontend** for the CookBook application, built with **React**, **R
 ```bash
 git clone https://github.com/yourusername/cookbook-frontend.git
 cd cookbook-frontend
-Install dependencies:
 
-bash
+Install dependencies:
 npm install
 Create a .env file in the root with:
 
 env
 VITE_API_BASE_URL=https://your-backend-url.com
-Run the app locally:
 
-bash
 npm run dev
 Open your browser at http://localhost:5173.
 ```
