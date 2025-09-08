@@ -8,7 +8,7 @@ import RecipeList from "./pages/RecipeList";
 import AddRecipe from "./pages/AddRecipe";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
-import RecipeDetails from "./pages/recipeDetails";
+import RecipeDetails from "./pages/RecipeDetails";
 import EditRecipe from "./pages/EditRecipe";
 import Footer from "./components/Footer";
 
