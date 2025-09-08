@@ -4,7 +4,7 @@ This is the **frontend** for the CookBook application, built with **React**, **R
 
  ### Preview
 
-![CookBook Frontend Screenshot](./src/assets/image.png)
+![CookBook Backend Screenshot](./static/img/image.png)
 
 ## 🌐 Live Demo
 
